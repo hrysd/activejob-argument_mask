@@ -1,8 +1,8 @@
 # Activejob::ArgumentMask
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/activejob/argument_mask`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://travis-ci.org/hrysd/activejob-argument_mask.svg?branch=master)](https://travis-ci.org/hrysd/activejob-argument_mask)
 
-TODO: Delete this and the text above, and describe your gem
+This is [activejob](https://github.com/rails/rails/tree/master/activejob) extension wich mask arguments of specified Job from ActiveJob's log file.
 
 ## Installation
 
@@ -22,7 +22,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### In Rails application
+
+You can specify job class which mask arguments in configuration.
+
+- config/application.rb
+
+```ruby
+module App
+  class Application < Rails::Application
+    config.active_job_argument_mask.job_classes = %w(SensitiveJob)
+  end
+end
+```
+
+Output example:
+
+```
+[ActiveJob] [SensitiveJob] [3c6f7384-deae-4a7d-9387-7204a09b24e9] Performing SensitiveJob (Job ID: 3c6f7384-deae-4a7d-9387-7204a09b24e9) from Async(default) with masked arguments
+```
 
 ## Development
 
