@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Hiroshi Yoshida"]
   spec.email         = ["hrysd22@gmail.com"]
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{ Write a longer description or delete this line.}
+  spec.summary       = %q{Mask arguments of specified Job from ActiveJob's log file}
+  spec.description   = %q{This is ActiveJob extension wich mask arguments of specified Job from ActiveJob's log.}
   spec.homepage      = "https://github.com/hrysd/activejob-argument_mask"
   spec.license       = "MIT"
 
