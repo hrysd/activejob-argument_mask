@@ -5,8 +5,8 @@ sudo: false
 before_install: gem install bundler
 
 gemfile:
-  - activejob_5_0.gemfile
-  - activejob_5_1.gemfile
+  - gemfiles/activejob_5_0.gemfile
+  - gemfiles/activejob_5_1.gemfile
 
 rvm:
   - 2.3.6
