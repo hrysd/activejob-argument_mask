@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hrysd/activejob-argument_mask.svg?branch=master)](https://travis-ci.org/hrysd/activejob-argument_mask)
 
-This is [ActiveJob](https://github.com/rails/rails/tree/master/activejob) extension wich mask arguments of specified Job from ActiveJob's log file.
+This is [ActiveJob](https://github.com/rails/rails/tree/master/activejob) extension which mask arguments of specified Job from ActiveJob's log file.
 
 ## Installation
 
