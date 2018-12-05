@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hrysd/activejob-argument_mask.svg?branch=master)](https://travis-ci.org/hrysd/activejob-argument_mask)
 
-This is [ActiveJob](https://github.com/rails/rails/tree/master/activejob) extension which mask arguments of specified Job from ActiveJob's log file.
+This is an [ActiveJob](https://github.com/rails/rails/tree/master/activejob) extension that masks arguments of a specified Job in ActiveJob's log output.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-You can specify job class which mask arguments in configuration.
+Specify the job class whose arguments should be masked. In the following example, we are masking the arguments of the job "SensitiveJob".
 
 - config/application.rb
 
