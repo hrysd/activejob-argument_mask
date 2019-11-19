@@ -1,6 +1,6 @@
 # ActiveJob::ArgumentMask
 
-![](https://github.com/hrysd/activejob-argument_mask/workflows/.github/workflows/ruby.yml/badge.svg)
+![](https://github.com/hrysd/activejob-argument_mask/workflows/Ruby/badge.svg)
 
 This is an [ActiveJob](https://github.com/rails/rails/tree/master/activejob) extension that masks arguments of a specified Job in ActiveJob's log output.
 
