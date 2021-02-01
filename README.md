@@ -4,6 +4,22 @@
 
 This is an [ActiveJob](https://github.com/rails/rails/tree/master/activejob) extension that masks arguments of a specified Job in ActiveJob's log output.
 
+## :exclamation: If you using Rails 6.1 :exclamation:
+
+Rails 6.1 has the same features as this gem.
+We can do the same like followings:
+
+```ruby
+class SensitiveJob < ApplicationJob
+  self.log_arguments = false
+
+  def perform(args)
+  end
+end
+```
+
+PR: https://github.com/rails/rails/pull/37660
+
 ## Installation
 
 Add this line to your application's Gemfile:
